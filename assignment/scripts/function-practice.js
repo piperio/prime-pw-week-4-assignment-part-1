@@ -75,30 +75,14 @@ console.log(getLast([1, 2]));
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find
 
-let pets =['dog', 'cat', 'fish']
-
-let pet = pets.find(pet => pet === 'dog');
-
-console.log(pet);
-
-//another method
-let items = ['a', 'b', 'c']
-
-if(item[items.length] = 'b'){
-    return true
-  } else {
-    return false
+function find(value, array){
+  for (var i = 0; i < array.length; i++) {
+    if (array[i].name === value){
+      return true;
+    } else
+    return false;
   }
 }
-
-function find( value, array ){
-if (value){
-  return true;
-} else {
-  return false;
-}
-}
-console.log ()
 
 // ----------------------
 // Stretch Goals
