@@ -76,13 +76,16 @@ console.log(getLast([1, 2]));
 //    DO NOT use Array.includes, Array.indexOf, or Array.find
 
 function find(value, array){
-  for (var i = 0; i < array.length; i++) {
-    if (array[i].name === value){
+  console.log('in find', value, array);
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] === value){
       return true;
-    } else
-    return false;
+    }
+    }
   }
-}
+
+console.log('running find with 2 and [3, 2, 6, 9]', find(2, [3, 2, 6, 9]));
+console.log ('running find with 45 and [22, 68, 26, 423]', find(45, [22, 68, 26, 423]));
 
 // ----------------------
 // Stretch Goals
@@ -122,21 +125,12 @@ function sumAll(input) {
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
 
-let oldArray = [3, 4, -1, -6, -7, 6, 8, -23]
+let array = [1, 2, 3, 4, 5, -2, 23, -1, -13, 10, -52],
+positive = array.filter(function(a) {
+  return a>=0;
+})
 
-function posArr(numbers) {
-  var positives = [];
-  for (var i = 0; i < numbers.length; i++) {
-    if(numbers[i] >= 0){
-      positives.push(numbers[i]);
-    }
-  }
-  console.log(positives);
-  return positives;
-}
-var positiveArray = posArr([]);
-
-console.log(positiveArray);
+console.log(positive)
 
 
 
