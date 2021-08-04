@@ -137,3 +137,13 @@ console.log(positive)
 // 11. Pick a problem from Edabit(https://edabit.com/) or
 //     CodeWars(https://www.codewars.com/). Then describe it
 //     here in a comment, write the function, and test it!
+
+//From edabit: Create a function that takes voltage and current and returns the calculated power.
+
+function circuitPower(voltage, current){
+  let power = voltage * current;
+  return power;
+
+}
+
+console.log(circuitPower(12, 24));
