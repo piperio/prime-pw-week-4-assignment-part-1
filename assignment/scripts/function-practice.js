@@ -81,7 +81,7 @@ function find(value, array){
     if (array[i] === value){
       return true;
     }
-    }
+  } return false;
   }
 
 console.log('running find with 2 and [3, 2, 6, 9]', find(2, [3, 2, 6, 9]));
