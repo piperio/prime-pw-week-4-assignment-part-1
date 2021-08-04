@@ -122,8 +122,21 @@ function sumAll(input) {
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
 
+const arr = [2, 5, -20, 3, -18, 7, -39, 65, -32];
 
-
+const splitArray = (arr) => {
+  return arr.reduce((acc, val) => {
+    if (val > 0) {
+      acc['positive'].push(val);
+    }
+    return acc;
+  }, {
+    positive: []
+  })
+};
+for (var i = 0; i < arr.length; i++) {
+  console.log(splitArray(arr[i]));
+}
 
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or
