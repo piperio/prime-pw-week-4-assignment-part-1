@@ -89,19 +89,28 @@ function find(value, array){
 // ----------------------
 // 8. Function to check if a letter is the first letter in a
 //    string. Return true if it is, and false otherwise
-function isFirstLetter(letter, string) {
 
-}
+function isFirstLetter(letter, string) {
+  if (letter[0] === string[0]){
+    return true;
+  } else {
+    return false;
+  }
+  }
+
 console.log( 'isFirstLetter - should say true', isFirstLetter('a', 'apple') );
 console.log( 'isFirstLetter - should say false', isFirstLetter('z', 'apple') );
 
 // 9. Function to return the sum of all numbers in an array
 function sumAll( ) {
-  let sum = 0
-  // TODO: loop to add items
-  return sum;
-}
+  let sum = 0;
+  for (var i = 0; i < array.length; i++) {
+    total += array[i];
+  }  return sum;
 
+  // TODO: loop to add items
+}
+console.log('sumAll');
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
